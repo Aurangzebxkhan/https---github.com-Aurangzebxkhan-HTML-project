@@ -1,0 +1,68 @@
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 20%;
+            border: 3px solid #0056b9;
+            transition: transform 0.3s, border-color 0.3s; 
+           
+        }
+        .profile-image:hover {
+            transform: scale(1.1); 
+            border-color: #ff4500; 
+        }
+        table{
+            text-align: center;
+            width: 50%;
+            margin: 7px auto;
+            border-collapse: collapse;
+        }
+        #studentinfo {
+            text-align: center;
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px 15px;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+        #abc{
+            text-align: center;
+            background-color: rgb(112, 175, 248);
+        }
+        #ccddee{
+            position: absolute;
+            top: auto;
+            right: 5cm;
+        
+        }
+        th {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        hr {
+            border: 1px solid black;
+            margin: 2px;
+        }
+        #xyz {
+            position: absolute;
+            top: auto;
+            right: 13cm;
+            
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        
+    

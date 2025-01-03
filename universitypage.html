@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: hsl(0, 0%, 96%);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background: hwb(0 100% 0%);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form select, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 16px;
+        }
+        ul, ol {
+            margin: 20px;
+            padding: 10px;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 8px;
+        }
+        video {
+            display: block;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        #bccb{
+            text-align: center;
+            background-color: rgb(88, 83, 94);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Admission form of CASE university islamabad B 17</h1>
+    </header>
+    <main>
+        
+        <section>
+            <h2>Admission Form</h2>
+            <form>
+                <label for="name">First Name</label>
+                <input type="text" id="Name" name="name" placeholder="First name" required>
+
+                <label for ="name">Last Name</label>
+                <input type="text" id="Name" name="last" placeholder="Last name" required>
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="Name" name="fullName" placeholder="Full Name" required>
+
+                <label for="CNIC">Enter your CNIC (ID Card Number)</label>
+                <input type="text" id="CNIC" name="CNIC" placeholder="CNIC" required>
+
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" placeholder="Father's Name" required>
+
+                <label for="fatherCNIC">Enter your Father's CNIC:</label>
+                <input type="text" id="fatherCNIC" name="fatherCNIC" placeholder="Father CNIC" required>
+
+                <label for="dob">Your Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="student address"> Enter your full address</label>
+                <input type="text"id="student address"value="student address"placeholder="Enter your full address"required>
+
+                <label for="program">Program Applying For</label>
+                <select id="program" name="program" required>
+                  <option value="BSAI">Bachelor of Artificial Intelligence</option>
+                  <option value="BSCC">Bachelor of Computer Science</option>
+                  <option value="BSSE">Bachelor of Software Engineering</option>
+                  <option value="BSCS">Bachelor of Cyber Security</option>
+                </select>
+
+                <label for="mobile">Enter your Mobile Number</label>
+                <input type="number" id="mobile" name="mobile" placeholder="Enter your Mobile number" required>
+
+                <label for="motherMobileNumber"> Enter your mother Mobile Number (if she have)</label>
+                <select id="mothermobilenumber" name="motherMobileNumber" required>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+
+                <label for="motherMobileNumber">Enter your Mother's Mobile Number</label>
+                <input type="number" id="motherMobileNumber" name="motherMobileNumber" placeholder="Enter your Mother's Mobile Number">
+
+                <label for="fatherMobile">Enter your Father's Mobile Number:</label>
+                <input type="number" id="fatherMobile" name="fatherMobile" placeholder="Enter your Father's Mobile Number" required>
+
+                <label for="metricMarks">Enter your Metric Marks:</label>
+                <input type="number" id="metricMarks" name="metricMarks" placeholder="Enter your Metric Marks" required>
+
+                <label for="fscMarks">Enter your FSc Marks:</label>
+                <input type="number" id="fscMarks" name="fscMarks" placeholder="Enter your FSc Marks" required>
+
+                
+                <label for="metricPDF">Upload your Metric Marksheet (PDF)</label>
+                <input type="file" id="metricPDF" name="metricPDF" accept="application/pdf" required>
+
+                <label for="fscPDF">Upload your FSc Marksheet (PDF):</label>
+                <input type="file" id="fscPDF" name="fscPDF" accept="application/pdf" required>
+
+                <label for="fatherCNIC"> Upload your fatherCNIC back and front</label>
+                <input type="file" id="fatherCNIC"name="fatherCNIC" accept="application/jpg" required>
+
+               
+                <label for="studentPicture">Upload Your Picture</label>
+                <input type="file" id="studentPicture" name="studentPicture" accept="image/*" required>
+
+                <div class="checkbox-group">
+
+                    <p>Why did you choose our university? </p>
+                    <label>
+                        <input type="checkbox" name="reason" value="reputation"> Excellent reputation
+                    </label>
+                    <label>
+                        <input type="checkbox" name="reason" value="faculty"> Highly qualified faculty
+                    </label>
+                    <label>
+                        <input type="checkbox" name="reason" value="programs"> Wide range of programs
+                    </label>
+                    <label>
+                        <input type="checkbox" name="reason" value="facilities"> Modern facilities and campus
+                    </label>
+                    <label>
+                        <input type="checkbox" name="reason" value="scholarship"> Scholarship opportunities
+                    </label>
+                    <label>
+                        <input type="checkbox" name="reason" value="Sports"> A high achievement in Sports
+                    </label>
+
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+       
+        <section>
+            
+            
+            <h2>If you not pass the test then Wait for the come text and also for Meritlist </h2>
+            <ul>
+                <li>Admission Open</li>
+                <li>Merit List Announced</li>
+                <li>Orientation Day</li>
+            </ul>
+
+            
+            <h2>Connect with us</h2>
+            <ol>
+                <li>Submit Application</li>
+                <li>Wait for Interview Call</li>
+                <li>Attend Interview</li>
+            </ol>
+
+           
+            <h2>information for student</h2>
+            <dl>
+                <dt>Application Deadline</dt>
+                <dd>January 15, 2025</dd>
+                <dt>Tuition Fees</dt>
+                <dd>RS:132000 per semester</dd>
+                <dt>Attendance of class</dt>
+                <dd>75%</dd>
+                <dt>Assignment,Quiz,lab task</dt>
+                <dd>very importand in case University</dd>
+            </dl>
+        </section>
+
+        <h2>sorry for this yar our video nahe hai na audio mai(Video):</h2>
+<video controls>
+    <source src="C:\Users\auran\Downloads\TASSAWAR _ Gul Panra New Tappy _ Gul Panra New OFFICIAL TAPPY Tassawar 2021.mp4" type="video/mp4">
+    i have no video and Are you in my laptop
+   
+</video>
+        <section>
+            <h2>this the video </h2>
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                This is the videowhich is belongs to  W3 school. 
+            </video>
+
+        </section>
+
+<section>
+    <h1>Watch our Facebook video</h1>
+<video controls>
+    <source src="assets/hi.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</section>
+
+        <section>
+            
+           <h1 id="bccb"> <a href="assets\hi.mp4"> this is the facebook video</a> just for ckecking bro </h1> 
+        </section>
+
+        
+        <section>
+            <h1>This is the YouTube Video</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BsDoLVMnmZs?si=QYHC3Q_yw1qDy5Q7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </section>
+
+        
+        <section>
+            <h1> this is the audio mp3</h1>
+            <audio controls>
+                <source src="assets\abc.mp3" type="audio/mp3">
+            </audio>
+        </section>
+        
+        
+    </main>
+</body>
+</html>

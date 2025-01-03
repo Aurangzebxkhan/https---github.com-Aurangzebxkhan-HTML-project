@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2e11d2;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+        button:hover {
+            background-color: #f90303;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex > div {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> CASE University Application</h1>
+        <form action="/submit-form" method="post" enctype="multipart/form-data">
+            <!-- Text Input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Password Input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <!-- Gender Radio Buttons -->
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="form-group">
+                <label for="profile-picture">Profile Picture</label>
+                <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+            </div>
+
+            <!-- Course Selection -->
+            <div class="form-group">
+                <label for="course">Select Your Course</label>
+                <select id="course" name="course">
+                    <option value="cs">Computer Science</option>
+                    <option value="eng">Engineering</option>
+                    <option value="med">Medicine</option>
+                </select>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="about">Tell Us About Yourself</label>
+                <textarea id="about" name="about" rows="5" placeholder="Share something about yourself..."></textarea>
+            </div>
+
+            <!-- Agreement Checkbox -->
+            <div class="form-group">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">I agree to the terms and conditions</label>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="form-group flex">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
